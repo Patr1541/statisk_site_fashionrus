@@ -1,0 +1,50 @@
+/*FARVER OG FONTE*/
+:root {
+  /* Farver */
+  --green-background: rgb(216, 237, 216); /*font-farve*/
+  --green-btn: rgb(33, 116, 16); /*knap-farve*/
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-overskrift);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 20px;
+  color: black;
+  list-style: none;
+}
+
+a,
+p {
+  color: black;
+  text-decoration: none;
+}
+
+/*Generelle regler*/
+
+/* GENERALLE REGLER */
+
+* body {
+  background-color: var(--green-background); /*backgrounds*/
+  color: var(--deep-charcoal); /*tekst*/
+}
+
+/* Menu-header navigation */
+
+.header_menu {
+  background-color: lightblue;
+
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin: 0 auto;
+  position: sticky;
+  padding: 20px 0 20px 0;
+}
+
+.header_menu a {
+  background-color: rgb(218, 134, 211);
+}

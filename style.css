@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Forside, kategorier */
+
+.grid_kategori {
+  background-color: lightgreen;
+}
+
+.category_in_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+.category_in_list img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.grid_kategori a:hover {
+  filter: opacity(70%);
+}
+
+/* Produkter i kategori*/
+
+.grid_productlist {
+  background-color: pink;
+}
+
+.products_in_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*  grid-row: 3 span; */
+
+  gap: 5px;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+.products_in_list a:hover {
+  filter: opacity(70%);
+}
+
+/* Label sold out */
+
+/* .img_box3 .soldout {
+  color: red;
+
+  position: absolute;
+  z-index: 10;
+
+  padding-top: 60px;
+} */
+
+.img_box3 img {
+  filter: opacity(50%);
+}
+
+.grid_productlist article {
+  position: relative;
+}
+
+/*Alans kode sold out*/
+.grid_productlist article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: white;
+  color: black;
+  padding: 1rem;
+  font-weight: bold;
+  z-index: 10;
+  margin-top: 60px; /*HJÆÆÆÆÆÆÆLP TIL PLACERING*/
+}
+
+/* Discounted*/
+
+.discounted {
+  color: rgb(36, 42, 38);
+}
+
+.discounted p:last-child {
+  background: red;
+  padding: 8px;
+
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Produktet-beskrivelse*/
+
+.product_desc {
+  background-color: lightcoral;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.product_desc img {
+  width: 400px;
+  height: auto;
+  padding: 20px 0 20px 0;
+}
+
+/* Knapper */
+
+.btn_back {
+  display: inline-block;
+  background-color: rgb(33, 116, 16);
+  border-radius: 10px;
+  padding: 0.4rem 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: max-content;
+}
+
+/***** MEDIA-QUEREY ******/
+
+@media (max-width: 600px) {
+  .products_in_list {
+    grid-template-columns: 1fr 1fr; /* 2 kolonner på mobil */
+  }
+
+  .grid_productlist article.soldOut::before {
+    top: 0.5rem;
+    left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
