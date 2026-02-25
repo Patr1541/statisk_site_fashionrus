@@ -1,14 +1,29 @@
 /*FARVER OG FONTE*/
 :root {
   /* Farver */
-  --green-background: rgb(216, 237, 216); /*font-farve*/
-  --green-btn: rgb(33, 116, 16); /*knap-farve*/
+
+  --grey-background: #f7f7f7; /*background-color*/
+  --green-mint: #a8e6cf; /*Mint-green background*/
+  --green-kaki: #6b7a4c; /**/
+  --green-forest: #2e4a3d; /*Header-color*/
+  --green-salvie: #b7c9a9;
+  --green-lime: #a3ff00;
+  --white: white;
 }
 
-h1,
+h1 {
+  /* font-family: var(--font-overskrift); */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 20px;
+  color: var(--green-forest);
+  list-style: none;
+}
+
 h2,
 h3 {
-  font-family: var(--font-overskrift);
   padding-top: 20px;
   padding-bottom: 20px;
   line-height: 20px;
@@ -27,14 +42,14 @@ p {
 /* GENERALLE REGLER */
 
 * body {
-  background-color: var(--green-background); /*backgrounds*/
-  color: var(--deep-charcoal); /*tekst*/
+  background-color: var(--grey-background); /*backgrounds*/
+  color: sort; /*tekst*/
 }
 
 /* Menu-header navigation */
 
 .header_menu {
-  background-color: lightblue;
+  background-color: var(--green-salvie);
 
   display: flex;
   justify-content: space-between;
@@ -46,5 +61,34 @@ p {
 }
 
 .header_menu a {
-  background-color: rgb(218, 134, 211);
+  color: sort;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.header_menu a:hover {
+  filter: opacity(70%);
+}
+
+.nav a {
+  background-color: var(--green-salvie);
+}
+
+.center_h1 {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+footer .a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer ul {
+  list-style: none;
 }

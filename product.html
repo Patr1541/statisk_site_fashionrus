@@ -9,12 +9,21 @@
     <link rel="stylesheet" href="general.css" />
   </head>
   <body>
-    <header>
-      <div id="top"></div>
+    <div id="top"></div>
+    <header class="header_menu">
+      <a href="index.html" class="logo">
+        <img src="img/fashionRus_logoudkast.svg" alt="Logo" />
+      </a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="productlist.html">Category</a>
+        <a href="product.html">Product</a>
+      </nav>
     </header>
 
     <main>
-      <h1>Produktet</h1>
+      <h1 class="center_h1">The specifics</h1>
 
       <section class="product_desc">
         <div class="img_box">
@@ -24,19 +33,35 @@
           />
         </div>
         <div class="tekst_box">
-          <h3>Underoverskrift titel</h3>
-          <p>Brand</p>
-          <p>Pris</p>
-          <p>Tekst om produkt</p>
-          <p>Lagerstatus</p>
+          <h3>Kalenji sneaker</h3>
+          <p>Categori: Sneakers</p>
+          <p>Price: 795,-</p>
+          <p>Lagerstatus: 3</p>
 
-          <button>Tilføj til kurv</button>
+          <br />
+          <span></span>
+          <p>
+            Kalenji-sneakeren kombinerer letvægt og komfort til hverdagsbrug.
+            Det stilrene design med blå og grå detaljer giver et sporty udtryk.
+            Et pålideligt valg til dig, der vil have både funktion og stil.
+          </p>
+
+          <button class="btn_add">Add to basket</button>
         </div>
       </section>
 
       <section class="btn_back">
-        <a href="index.html">BUTTON HOME</a>
+        <a href="productlist.html">Back to products</a>
       </section>
     </main>
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <a href="#top">Til top</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
