@@ -12,7 +12,7 @@ img {
 /* Forside, kategorier */
 
 .grid_kategori {
-  background-color: lightgreen;
+  background-color: var(--grey-background);
 }
 
 .category_in_list {
@@ -24,22 +24,26 @@ img {
   padding-bottom: 50px;
   margin: 0 auto;
   max-width: fit-content;
+  background-color: var(--grey-background);
 }
 
 .category_in_list img {
   width: 200px;
   height: auto;
-  border-radius: 5px;
 }
 
 .grid_kategori a:hover {
   filter: opacity(70%);
 }
 
+.category_in_list h2 {
+  background-color: var(--green-salvie);
+}
+
 /* Produkter i kategori*/
 
 .grid_productlist {
-  background-color: pink;
+  background-color: var(--green-salvie);
 }
 
 .products_in_list {
@@ -53,6 +57,11 @@ img {
   padding-bottom: 50px;
   margin: 0 auto;
   max-width: fit-content;
+}
+
+.grid_productlist img {
+  width: 200px;
+  height: auto;
 }
 
 .products_in_list a:hover {
@@ -97,7 +106,7 @@ img {
 }
 
 .discounted p:last-child {
-  background: red;
+  background: var(--green-lime);
   padding: 8px;
 
   display: inline-block;
@@ -108,7 +117,7 @@ img {
 /* Produktet-beskrivelse*/
 
 .product_desc {
-  background-color: lightcoral;
+  background-color: var(--green-salvie);
 
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -117,19 +126,29 @@ img {
 .product_desc img {
   width: 400px;
   height: auto;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 20px 10px;
 }
 
 /* Knapper */
 
 .btn_back {
   display: inline-block;
-  background-color: rgb(33, 116, 16);
+  background-color: var(--green-mint);
+
   border-radius: 10px;
   padding: 0.4rem 1rem;
   margin-top: 20px;
   margin-bottom: 20px;
   width: max-content;
+}
+
+.btn_add {
+  background: var(--green-mint);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0 20px 0;
+
+  font-weight: bold;
 }
 
 /***** MEDIA-QUEREY ******/
