@@ -9,25 +9,45 @@ img {
   display: block;
 }
 
-/* Forside, kategorier */
-
+/********** Forside, kategorier *********/
+/* 
 .grid_kategori {
-  background-color: var(--grey-background);
-}
+  background-color: var(--green-mint);
+} */
 
 .category_in_list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 5px;
-  justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+  gap: 50px;
+  padding: 50px 20px 50px 20px;
+
   margin: 0 auto;
-  max-width: fit-content;
+
   background-color: var(--grey-background);
 }
 
-.category_in_list img {
+/*Styling på nye JS-kategorier*/
+
+.img_box {
+  justify-content: center;
+
+  padding: 50px 70px 50px 70px;
+  margin: 0 auto;
+
+  background-color: var(--green-salvie);
+  border-radius: 5px;
+  box-shadow: 2px 1px 3px 1px var(--green-forest);
+
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.img_box:hover {
+  filter: opacity(50%);
+}
+
+/* .category_in_list img {
   width: 200px;
   height: auto;
 }
@@ -39,8 +59,9 @@ img {
 .category_in_list h2 {
   background-color: var(--green-salvie);
 }
+ */
 
-/* Produkter i kategori*/
+/******** Produkter i kategori***********/
 
 .grid_productlist {
   background-color: var(--green-salvie);
@@ -153,7 +174,7 @@ img {
 
 /***** MEDIA-QUEREY ******/
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .products_in_list {
     grid-template-columns: 1fr 1fr; /* 2 kolonner på mobil */
   }
